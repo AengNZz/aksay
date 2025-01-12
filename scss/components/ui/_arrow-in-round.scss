@@ -1,0 +1,14 @@
+.arrow-in-round {
+	@extend %flex-center;
+	width: rem(24);
+	height: rem(24);
+	border-radius: 50%;
+	background-color: var(--gray-color);
+	color: var(--gray-dark-color);
+
+	.icon {
+		width: rem(12);
+		height: rem(10);
+		fill: var(--gray-dark-color);
+	}
+}

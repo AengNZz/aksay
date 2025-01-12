@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <style>
+    html {
+      opacity: 0;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.min.css">
+  <title>Главная | AKSAY</title>
+</head>
+
+<body>
+  <section class="cta-mini">
+    <p class="cta-mini__text">
+      AKSAY GROUP — ваш надежный поставщик и партнер. Присоединяйтесь к числу наших дилеров сегодня
+    </p>
+    <a class="cta-mini__link" href="#">Подробнее</a>
+  </section>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__top">
+          <a class="header__logo" href="/"><img src="./images/logo.svg" alt=""></a>
+
+          <div class="header__right">
+            <address class="header__contact">
+              <ul class="header__contact-list">
+                <li class="header__contact-item">
+                  <a class="header__contact-link" href="tel:">
+                    <div class="header__contact-icon">
+                      <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#phone-fill"></use>
+                      </svg>
+                    </div>
+                    <div class="header__contact-info">
+                      <strong>8(495)847-69-70</strong>
+                      <span>Пн-Пт с 9:00 до 17:30</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__contact-item">
+                  <a class="header__contact-link" href="mailto:">
+                    <div class="header__contact-icon">
+                      <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#email-fill"></use>
+                      </svg>
+                    </div>
+                    <div class="header__contact-info">
+                      <strong>info@aksaygroup.ru</strong>
+                      <span>Напишите нам</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <div class="header__account">
+              <button class="header__account-btn" data-dropdown-open="account">
+                <div class="header__account-icon">
+                  <svg class="icon">
+                    <use xlink:href="./images/sprite.svg#person-fill"></use>
+                  </svg>
+                </div>
+                <div class="header__account-info">
+                  <strong>Личный кабинет</strong>
+                  <span>Для юр. лиц и ИП</span>
+                </div>
+              </button>
+              <div class="dropdown-menu" data-dropdown="account">
+                <ul class="dropdown-menu__list">
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__item-link" href="#">
+                      <div class="dropdown-menu__item-icon">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#person-fill"></use>
+                        </svg>
+                      </div>
+                      Общие данные
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item catalog">
+              <a class="header__nav-catalog" data-dropdown-open="catalog" href="#">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#burger"></use>
+                </svg>
+                Каталог товаров
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Бренд DAYREX</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Бренд FOCUSray</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Новости</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <label class="header__nav-search">
+            <input class="search-input" type="search" placeholder="Введите артикул или название товара">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg>
+          </label>
+        </nav>
+      </div>
+    </header>
+    <main class='page'>
+      <span data-observer></span>
+
+      <!-- INTRO -->
+      <section class="intro">
+        <div class="intro__container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="intro__slide" style="background-image: url('./images/intro.webp');">
+                  <div class="intro__slide-box">
+                    <h2 class="intro__slide-title">Акция для юридических лиц и ИП от DAYREX</h2>
+                    <p class="intro__slide-text">
+                      При регистрации на сайте вы получаете доступ к прайс-листу с уникальными условиями
+                      сотрудничества и выгодными предложениями.
+                    </p>
+                    <div class="intro__slide-btns">
+                      <button class="intro__slide-btn btn --sun tilt-default" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.4" data-tilt-axis="x">Зарегистрироваться</button>
+                      <a class="intro__slide-btn btn --outline" href="#">Посмотреть товары</a>
+                    </div>
+                  </div>
+                  <a class="intro__slide-card tilt-card" href="#" data-tilt data-tilt-glare data-tilt-max-glare="0.2"
+                    data-tilt data-tilt-scale="1.05">
+                    <div class="intro__slide-card-features">
+                      <div class="intro__slide-card-feature --feature --orange">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#fire"></use>
+                        </svg>
+                        <div>Температура <span>1300 градусов</span></div>
+                      </div>
+                      <div class="intro__slide-card-feature --feature --blue">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#fire"></use>
+                        </svg>
+                        <div>Длина пламени <span>165 мм</span></div>
+                      </div>
+                    </div>
+                    <div class="intro__slide-card-img">
+                      <img src="./images/intro-card.png" alt="Газовая горелка 42">
+                    </div>
+                    <div class="intro__slide-card-bottom">
+                      <h3>Газовая горелка 42</h3>
+                      <span class="arrow-in-round">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="intro__slide" style="background-image: url('./images/intro.webp');">
+                  <div class="intro__slide-box">
+                    <h2 class="intro__slide-title">Акция для юридических лиц и ИП от DAYREX</h2>
+                    <p class="intro__slide-text">
+                      При регистрации на сайте вы получаете доступ к прайс-листу с уникальными условиями
+                      сотрудничества и выгодными предложениями.
+                    </p>
+                    <div class="intro__slide-btns">
+                      <button class="intro__slide-btn btn --sun tilt-default" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.4" data-tilt-axis="x">Зарегистрироваться</button>
+                      <a class="intro__slide-btn btn --outline" href="#">Посмотреть товары</a>
+                    </div>
+                  </div>
+                  <a class="intro__slide-card tilt-card" href="#" data-tilt data-tilt-glare data-tilt-max-glare="0.2"
+                    data-tilt data-tilt-scale="1.05">
+                    <div class="intro__slide-card-features">
+                      <div class="intro__slide-card-feature --feature --orange">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#fire"></use>
+                        </svg>
+                        <div>Температура <span>1300 градусов</span></div>
+                      </div>
+                      <div class="intro__slide-card-feature --feature --blue">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#fire"></use>
+                        </svg>
+                        <div>Длина пламени <span>165 мм</span></div>
+                      </div>
+                    </div>
+                    <div class="intro__slide-card-img">
+                      <img src="./images/intro-card.png" alt="Газовая горелка 42">
+                    </div>
+                    <div class="intro__slide-card-bottom">
+                      <h3>Газовая горелка 42</h3>
+                      <span class="arrow-in-round">
+                        <svg class="icon">
+                          <use xlink:href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class='footer'></footer>
+  </div>
+
+
+  <script src="./scripts/libs/swiper-bundle.min.js"></script>
+  <script src="./scripts/libs/vanilla-tilt.min.js"></script>
+  <script type="module" src="./scripts/bundle.min.js"></script>
+</body>
+
+</html>
