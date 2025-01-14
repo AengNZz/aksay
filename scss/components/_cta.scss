@@ -1,0 +1,20 @@
+.cta {
+	padding: rem(56) 0;
+	background: var(--bs-linear-gradient);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__title {
+		max-width: rem(810);
+		color: var(--gray-color);
+	}
+
+	&__btn {
+		max-width: rem(200);
+		width: 100%;
+	}
+}

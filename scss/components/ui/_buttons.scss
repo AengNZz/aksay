@@ -8,13 +8,23 @@
 	color: var(--light-color);
 	transition: var(--bs-transition);
 
+	&.--default {
+		padding: rem(14) rem(16);
+		min-height: auto;
+		font-size: rem(16);
+		background-color: var(--primary-color);
+
+		@include hover {
+			background-color: var(--primary-light-color);
+		}
+	}
 
 	&.--sun {
 		overflow: hidden;
-		background: linear-gradient(90deg, #f0a151 0%, #fb8f21 100%);
+		background: var(--bs-linear-gradient);
 		transition: unset;
-		
-		&:hover {
+
+		@include hover {
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 		}
 	}
@@ -23,8 +33,23 @@
 		background-color: transparent;
 		border: 1px solid rgba(#fff, 0.15);
 
-		&:hover {
+		@include hover {
 			border-color: var(--light-color);
+		}
+	}
+
+	&.--light {
+		padding: rem(12) rem(16);
+		min-height: auto;
+		font-size: rem(16);
+		line-height: rem(20);
+		background-color: var(--light-color);
+		color: var(--accent-color);
+
+		@include hover {
+			background-color: transparent;
+			border: 1px solid var(--light-color);
+			color: var(--light-color);
 		}
 	}
 }

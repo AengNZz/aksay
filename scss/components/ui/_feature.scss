@@ -3,4 +3,22 @@
 	font-size: rem(12);
 	line-height: rem(16);
 	border-radius: rem(8);
+
+	&-orange {
+		background-color: rgba(#f89531, 0.15);
+		color: var(--accent-color);
+
+		& {
+			fill: var(--accent-color);
+		}
+	}
+
+	&-blue {
+		background-color: rgba(#005aa9, 0.15);
+		color: var(--primary-color);
+
+		& {
+			fill: var(--primary-color);
+		}
+	}
 }

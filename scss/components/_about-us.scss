@@ -1,0 +1,132 @@
+.about-us {
+	position: relative;
+	padding: rem(100) 0;
+	background-color: var(--primary-color);
+	overflow: hidden;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: -4px;
+		left: 50%;
+		width: rem(1159);
+		height: rem(280);
+		transform: translateX(-50%);
+		background-image: url('../images/planet.webp');
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		color: var(--light-color);
+	}
+
+	&__about-company {
+		max-width: rem(575);
+	}
+
+	&__about-company-subtitle {
+		margin-top: rem(12);
+		font-size: rem(14);
+		line-height: rem(21);
+		font-weight: 400;
+	}
+
+	&__stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(4) rem(40);
+		max-width: rem(650);
+		width: 100%;
+	}
+
+	&__stats-item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: rem(2);
+	}
+
+	&__stats-subtitle {
+		font-size: rem(14);
+		line-height: rem(20);
+		font-weight: 400;
+	}
+
+	&__reps {
+		position: relative;
+		margin-top: 8px;
+	}
+
+	&__reps-row {
+		display: flex;
+
+		&:nth-child(1) .about-us__reps-item {
+			margin-left: 33.1%;
+		}
+
+		&:nth-child(2) {
+			.about-us__reps-item:nth-child(1) {
+				margin-left: 18%;
+				bottom: -28px;
+			}
+			.about-us__reps-item:nth-child(2) {
+				margin-left: 28.8%;
+				top: -2px;
+			}
+		}
+
+		&:nth-child(3) {
+			margin-top: 26px;
+
+			.about-us__reps-item:nth-child(1) {
+				margin-left: 45.2%;
+			}
+			.about-us__reps-item:nth-child(2) {
+				margin-left: 19.1%;
+			}
+		}
+	}
+
+	&__reps-item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: rem(8);
+		gap: rem(8);
+		border-radius: rem(42);
+		background-color: var(--gray-color);
+
+		transition: var(--bs-transition);
+
+		@include hover {
+			transform: translateY(-4px)
+		}
+	}
+
+	&__reps-flag {
+		width: 29px;
+		height: 29px;
+		object-fit: cover;
+		object-position: center;
+		box-shadow: var(--bs-box-shadow);
+		user-select: none;
+		pointer-events: none;
+	}
+
+	&__reps-title {
+		font-size: rem(14);
+		line-height: rem(20);
+		font-weight: 600;
+		user-select: none;
+		pointer-events: none;
+	}
+}

@@ -83,24 +83,6 @@
 						font-weight: 600;
 					}
 				}
-
-				&:nth-child(1) {
-					background-color: rgba(#f89531, 0.15);
-					color: var(--accent-color);
-
-					&.--orange {
-						fill: var(--accent-color);
-					}
-				}
-
-				&:nth-child(2) {
-					background-color: rgba(#005aa9, 0.15);
-					color: var(--primary-color);
-
-					&.--blue {
-						fill: var(--primary-color);
-					}
-				}
 			}
 
 			&-img {
@@ -125,6 +107,10 @@
 				font-size: rem(18);
 				line-height: rem(24);
 				color: var(--bs-font-color);
+
+				h3 {
+					@include line-clamp(1);
+				}
 			}
 		}
 	}
