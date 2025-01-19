@@ -1,0 +1,46 @@
+.advantages {
+	padding: rem(80) 0;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-top: rem(30);
+		gap: rem(40);
+	}
+
+	&__item {
+		padding: rem(32);
+		background-color: var(--gray-color);
+		border-radius: var(--bs-radius);
+	}
+
+	&__item-icon {
+		display: inline-block;
+		width: rem(60);
+		height: rem(60);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&__item-info {
+		margin-top: rem(15);
+	}
+
+	&__item-title {
+		font-family: 'Open Sans', sans-serif;
+		font-size: rem(20);
+		line-height: rem(28);
+		font-weight: 700;
+	}
+
+	&__item-text {
+		margin-top: rem(10);
+		font-weight: 400;
+		line-height: rem(24);
+	}
+}

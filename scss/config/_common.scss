@@ -6,6 +6,8 @@
 @import '../components/ui/dropdown-menu';
 @import '../components/ui/product-card';
 @import '../components/ui/news-card';
+@import '../components/ui/rating';
+@import '../components/ui/reviews-card';
 
 // BASE
 @import '../components/base/header';
@@ -17,3 +19,8 @@
 @import '../components/sliders';
 @import '../components/cta';
 @import '../components/about-us';
+
+@import '../components/brand-intro';
+@import '../components/advantages';
+@import '../components/difference';
+@import '../components/reviews';

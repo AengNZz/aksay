@@ -1,0 +1,12 @@
+.reviews {
+	padding: rem(80) 0;
+	background-color: var(--gray-color);
+
+	&__title {
+		text-align: center;
+	}
+
+	.swiper {
+		padding: rem(30) 0 rem(28) 0;
+	}
+}

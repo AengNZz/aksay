@@ -178,3 +178,35 @@
 		height: 20px;
 	}
 }
+
+@mixin stars-full {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		width: 116px;
+		height: 20px;
+		background-image: url('../images/rating/stars-full.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@mixin stars-not-full {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		width: 116px;
+		height: 20px;
+		background-image: url('../images/rating/stars-not-full.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

@@ -1,0 +1,23 @@
+.brand-intro {
+	padding: rem(80) 0;
+
+	&__box {
+		display: grid;
+		grid-template-columns: 0.412fr 0.572fr;
+		gap: rem(25);
+		margin-top: rem(60);
+		height: rem(500);
+	}
+
+	&__img {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			border-radius: var(--bs-radius);
+			user-select: none;
+			pointer-events: none;
+		}
+	}
+}
