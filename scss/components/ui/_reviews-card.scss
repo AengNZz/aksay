@@ -1,4 +1,5 @@
 .reviews-card {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding: rem(32);
@@ -70,4 +71,6 @@
 		line-height: rem(16);
 		color: var(--gray-dark-color);
 	}
+
+
 }
